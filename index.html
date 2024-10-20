@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowry Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dowry Calculator</h1>
+
+        <label for="education">Education:</label>
+        <select id="education">
+            <option value="1.5">Undergraduate</option>
+            <option value="1.2">College</option>
+            <option value="1.05">High School</option>
+            <option value="0.9">Middle School</option>
+        </select><br>
+
+        <label for="netWorth">Family Net Worth:</label>
+        <select id="netWorth">
+            <option value="2">More than $10,000</option>
+            <option value="1.5">Between $5,000 and $10,000</option>
+            <option value="1.2">Less than $5,000</option>
+        </select><br>
+
+        <label for="caste">Caste:</label>
+        <select id="caste">
+            <option value="100">Brahmin</option>
+            <option value="50">Kshatriya</option>
+            <option value="20">Vaishya</option>
+            <option value="10">Shudra</option>
+            <option value="-50">Untouchable</option>
+        </select><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="musical" value="10"> Playing a musical instrument<br>
+        <input type="checkbox" id="cooking" value="20"> Good cook<br>
+        <input type="checkbox" id="easygoing" value="15"> Easygoing character<br>
+        <input type="checkbox" id="singing" value="10"> Sings well<br>
+
+        <label>Age:</label><br>
+        <input type="radio" name="age" value="1.5"> Between 18-23<br>
+        <input type="radio" name="age" value="1.2"> Between 24-27<br>
+        <input type="radio" name="age" value="0.95"> 28+<br>
+
+        <label>Reputation:</label><br>
+        <input type="checkbox" id="gossipParents" value="0.85"> Gossips about parents' attitude<br>
+        <input type="checkbox" id="gossipCharacter" value="0.9"> Gossips about character<br>
+        <input type="checkbox" id="generalGossip" value="-20"> General gossips<br>
+
+        <button id="calculate">Calculate Price</button>
+        <div class="result" id="result"></div>
+
+        <hr>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
