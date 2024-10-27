@@ -1,39 +1,69 @@
-html {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
-}
-
+/* Body Styling */
 body {
-    height: 100vh;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    background: rgb(244,168,200);
-    background: -moz-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    background: linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4a8c8",endColorstr="#006df6",GradientType=1);
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f8fb; /* Light blue-gray background */
+    color: #333; /* Dark gray text color for readability */
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
+/* Label and Legend Styling */
+label, legend {
+    font-weight: bold;
+    color: #444; /* Slightly darker gray for emphasis */
 }
 
-.container {
-    background: #fff;
-    border-radius: 10px;
-    padding: 40px; 
-    width: 90%;
-    max-width: 600px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    min-height: 600px;
+/* Input and Select Styling */
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
-hr {
-    margin-left: 0;
-    width: 80px;
-    background: #000;
+/* Fieldset Styling */
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #bbb; /* Softer gray for fieldset border */
+    border-radius: 8px; /* Rounded edges for a modern look */
+    background-color: #fafafa; /* Light gray background for fieldset */
+}
+
+/* Button Styling */
+#calculate {
+    padding: 12px 25px;
+    background-color: #007BFF; /* Blue for a more modern look */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#calculate:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Result Styling */
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
 }
